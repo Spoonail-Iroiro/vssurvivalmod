@@ -166,6 +166,14 @@ namespace Vintagestory.GameContent
             return 1f;
         }
 
+        public bool IgnoreMultiplyShouldEat
+        {
+            get
+            {
+                return true;
+            }
+        }
+
         private void TrapAnimal(Entity entity)
         {
             animUtil?.StartAnimation(new AnimationMetaData() { Animation = "triggered", Code = "triggered" });
